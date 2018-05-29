@@ -1,0 +1,7 @@
+{
+        "logicalColumnName": "Mobile Phone",
+        "physicalColumnName": "MOBILE_PHONE",
+        "isProfilable": "N",
+        "columnDataType": 0,
+        "isKeyColumn": "N"
+      },
