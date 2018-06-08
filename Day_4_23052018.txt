@@ -1,0 +1,157 @@
+a = 10
+print(type(a))
+<class 'int'>
+b = float(a)
+print(type(b))
+<class 'float'>
+print(b)
+10.0
+a = "Welcome"
+print(a)
+Welcome
+print(type(a))
+<class 'str'>
+print(type(None))
+<class 'NoneType'>
+a = 1+2j
+print(type(a))
+<class 'complex'>
+print(a)
+(1+2j)
+b = 1-2j
+print(a*b)
+(5+0j)
+print(type(True))
+<class 'bool'>
+print(type(False))
+<class 'bool'>
+String = "Welcome"
+S = String
+print(S)
+Welcome
+print(S[0])
+W
+print(S[0:3])
+Wel
+print(S[0:2:2])
+W
+print(S[0:1:2])
+W
+print(S[0:2:1])
+We
+print(S[1:])
+elcome
+print(S[:4])
+Welc
+print(S[0:5:2])
+Wlo
+bytes = [2,5,8]
+a = bytes
+print(type(a))
+<class 'list'>
+print(a[1])
+5
+x = bytes(a)
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+TypeError: 'list' object is not callable
+a = bytes(bytes)
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+TypeError: 'list' object is not callable
+b = [2,3,4,5]
+c = bytes(b)
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+TypeError: 'list' object is not callable
+print(type(b))
+<class 'list'>
+a = [12,23,45]
+x = bytes(a)
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+TypeError: 'list' object is not callable
+a = [10,20,30]
+b = bytearray(a)
+print(type(b))
+<class 'bytearray'>
+print(type(a))
+<class 'list'>
+c = byte(a)
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+NameError: name 'byte' is not defined
+a = [1,2,3,4,5]
+print(a[1])
+2
+a[0]=0
+print(a)
+[0, 2, 3, 4, 5]
+a = (1,2,3,"a","b")
+print(type(a))
+<class 'tuple'>
+print(a[0])
+1
+print(a)
+(1, 2, 3, 'a', 'b')
+print(a[:3])
+(1, 2, 3)
+print(a[3:])
+('a', 'b')
+a[0] = 0
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+a = range(5)
+print a
+  File "<input>", line 1
+    print a
+          ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(a)?
+print(a)
+range(0, 5)
+for i in a:
+    print(i)
+    
+0
+1
+2
+3
+4
+b = range(10,20)
+for i in b:
+    print(i)
+    
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+b = range(10,20,2)
+for i in b:
+    print(i)
+    
+10
+12
+14
+16
+18
+a = 10
+b = bytes(a)
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+TypeError: 'list' object is not callable
+arr = bytes(a)
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+TypeError: 'list' object is not callable
+x = 20
+y = bytes(x)
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+TypeError: 'list' object is not callable
