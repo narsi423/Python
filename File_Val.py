@@ -31,7 +31,8 @@ file_name = 'Validation.txt'
 mode = 'r'
 username = input("Please Enter your user name:\n")
 file_availability(file_name,mode)
-print(Read_Data(file_name))
+for i in Read_Data(file_name).details:
+    print(Read_Data(file_name).details)
 
 
 

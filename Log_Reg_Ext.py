@@ -15,7 +15,7 @@ def Login():
     details = {}
     uname = input("Enter Username: \n")
     if os.path.isfile(p.file_loc):
-        with open('Validation.txt','r') as f:
+        with open('Validation1.txt','r') as f:
             f_data = f.readlines()
             #print(f_data)
             for i in f_data:
@@ -44,7 +44,7 @@ def Register():
     rpword = input("Re-Enter Password: \n")
     if(pword == rpword):
         #print("User Registered successfully")
-        with open('Validation.txt','a') as f:
+        with open('Validation1.txt','a') as f:
             f.write(uname+','+pword+'\n')
             print("User Registered successfully")
     else:
@@ -55,7 +55,7 @@ def Change_Password():
     uname = input("Enter Username: ")
     if os.path.isfile(p.file_loc):
         details = {}
-        with open('Validation.txt','r') as f:
+        with open('Validation1.txt','r') as f:
             f_data = f.readlines()
             #print(f_data)
             for i in f_data:
@@ -70,7 +70,7 @@ def Change_Password():
                 npword = input("Enter New Password")
                 rnpword = input("Re Enter New Password")
                 if npword == rnpword:
-                    with open('Validation.txt','a') as f:
+                    with open('Validation1.txt','a') as f:
                         f.write(uname+','+npword+'\n')
                         print("Your password has been changed successfully")
                 else:
