@@ -1,5 +1,4 @@
 import os.path
-import sys
 import random
 class Online_Banking:
     def file_availability(self):
@@ -64,7 +63,7 @@ class Online_Banking:
                     Online_Banking.online_transfer(self,uname)
 
                 elif n == 4:
-                    Online_Banking.balance_enquiry(self, uname)
+                    Online_Banking.balance_inquiry(self, uname)
 
                 elif n == 5:
                     Online_Banking.change_password(self, uname)
@@ -78,7 +77,7 @@ class Online_Banking:
     def deposit(self,uname):
         self.uname = uname
         print("Deposit")
-        m = int(input("Choose your preference:\n 1. Current Account 2. Other account"))
+        m = int(input("Choose your preference:\n 1. Current Account\n 2. Other account\n"))
         if m == 1:
             acct_num = Online_Banking.user_acc_num(self)[uname]
             bal = int(Online_Banking.acc_num_bal(self)[acct_num])
@@ -97,7 +96,7 @@ class Online_Banking:
                 if Online_Banking.acc_num_bal(self)[acct_num] != None:
                     # print(int(Online_Banking.acc_num_bal(self)[acct_num]) + amt)
                     ob.write_data(uname, Online_Banking.user_pass(self)[uname], acct_num, bal + amt)
-                    print("Money", amt, "deposited successfully, available balance is :",Online_Banking.acc_num_bal(self)[acct_num])
+                    print("Money", amt, "deposited successfully")
             else:
                 print("Entered username is not registered with us")
 
@@ -135,7 +134,7 @@ class Online_Banking:
         else:
             print("Entered username is not registered with us")
 
-    def balance_enquiry(self,uname):
+    def balance_inquiry(self,uname):
         self.uname = uname
         acct_num = Online_Banking.user_acc_num(self)[uname]
         print("Available balance is:",int(Online_Banking.acc_num_bal(self)[acct_num]))
@@ -190,7 +189,7 @@ if n == 1:
         ob.login()
     else:
         print("No file")
-if n == 2:
+elif n == 2:
     ob.register()
 
 else:
