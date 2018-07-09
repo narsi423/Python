@@ -1,0 +1,30 @@
+{
+	"student": [
+		{
+			"name":"aaa",
+			"phone":1234567890,
+			"address": [
+				{
+					"dno":122,
+					"street":"1 blue street",
+					"city":"Hyd",
+					"state":"Telangana"
+				}
+				
+			]
+		},
+		{
+			"name":"bbb",
+			"phone":4561237809,
+			"address":[
+				{
+					"dno":123,
+					"street":"2 red street",
+					"city":"Hyd",
+					"state":"Telangana"
+				}
+				
+			]
+		}
+	]
+}
